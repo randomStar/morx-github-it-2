@@ -1,0 +1,10 @@
+schema_version: 1
+name: hello-web
+type: static_site
+entrypoint: payload/index.html
+deployment:
+  health_check:
+    path: /
+  resources:
+    memory_mb: 128
+    cpu: 0.25
